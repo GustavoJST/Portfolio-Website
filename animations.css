@@ -10,21 +10,6 @@ html {
     html {
         scroll-behavior: auto;
     }
-
-}
-.projects:hover {
-    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-    transform: translateY(-3px) scale(1.03);
-}
-
-.myphoto:hover {
-    box-shadow: rgba(2, 8, 20, 0.1) 0px 40px 0.875em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-    transform: translateY(-3px) scale(1.18);
-}
-
-.findme-imgs img:hover {
-    box-shadow: rgba(2, 8, 20, 0.1) 0px 20px 0.875em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-    transform: translateY(-5px) scale(1.10);
 }
 
 /* Animations will apply only for devices that have hover implemented (i.e
@@ -45,12 +30,27 @@ devices with a mouse or pointer) */
         transform: translateY(0px) scale(1.03);
     } 
 
+    .myphoto:hover {
+        box-shadow: rgba(2, 8, 20, 0.1) 0px 40px 0.875em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+        transform: translateY(-3px) scale(1.18);
+    }
+
     .projects {
         transition: all 500ms;
+    }
+
+    .projects:hover {
+        box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+        transform: translateY(-3px) scale(1.03);
     }
     
     .findme-imgs img {
         transition: all 400ms;
+    }
+
+    .findme-imgs img:hover {
+        box-shadow: rgba(2, 8, 20, 0.1) 0px 20px 0.875em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+        transform: translateY(-5px) scale(1.10);
     }
 }
 
@@ -69,9 +69,24 @@ mobile devices */
     .projects {
         transition: all 400ms;
     }
+
+    .projects:active {
+        box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+        transform: translateY(-3px) scale(1.03);
+    }
     
+    .myphoto:active {
+        box-shadow: rgba(2, 8, 20, 0.1) 0px 40px 0.875em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+        transform: translateY(-3px) scale(1.18);
+    }
+       
     .findme-imgs img {
         transition: all 350ms;
+    }
+
+    .findme-imgs img:active {
+        box-shadow: rgba(2, 8, 20, 0.1) 0px 20px 0.875em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+        transform: translateY(-5px) scale(1.10);
     }
 }
 
