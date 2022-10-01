@@ -10,6 +10,7 @@ body {
     min-width: auto;
     font-family: "Noto Sans", sans-serif;
     -webkit-tap-highlight-color: transparent;
+    overflow-anchor: none;
 }
 
 .header-wrapper {
@@ -87,7 +88,7 @@ header a {
     border-radius: 50%; 
     /* Box shadow fixes a weird bug in Opera. Square border appears for brief moment when
     blockEntrance animation is playing. */ 
-    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em; 
 }
 
 #findme-info {

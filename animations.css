@@ -14,8 +14,7 @@ html {
 
 /* Animations will apply only for devices that have hover implemented (i.e
 devices with a mouse or pointer) */
-@media (hover: hover) {
-    
+@media (hover: hover) { 
     .direita a:hover {
         background-color: #272525;
         color: aliceblue;
@@ -60,6 +59,7 @@ mobile devices */
     .direita a {
         transition: all 150ms ease-in-out;
     }
+
     .direita a:active  {
         box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
         background-color: #272525;
@@ -67,7 +67,7 @@ mobile devices */
     }
 
     .projects {
-        transition: all 400ms;
+        transition: all 200ms;
     }
 
     .projects:active {
@@ -75,7 +75,7 @@ mobile devices */
         transform: translateY(-3px) scale(1.03);
     }
     
-    .myphoto:active {
+    .myphoto:hover {
         box-shadow: rgba(2, 8, 20, 0.1) 0px 40px 0.875em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
         transform: translateY(-3px) scale(1.18);
     }
