@@ -1,0 +1,158 @@
+* {
+    --stagger-delay: 200ms;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduced) {
+    html {
+        scroll-behavior: auto;
+    }
+
+}
+.projects:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.03);
+}
+
+.myphoto:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 40px 0.875em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.18);
+}
+
+.findme-imgs img:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 20px 0.875em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-5px) scale(1.10);
+}
+
+/* Animations will apply only for devices that have hover implemented (i.e
+devices with a mouse or pointer) */
+@media (hover: hover) {
+    
+    .direita a:hover {
+        background-color: #272525;
+        color: aliceblue;
+    }
+    
+    .direita a {
+        transition: all 100ms;
+    }
+    
+    .direita a:hover {
+        box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+        transform: translateY(0px) scale(1.03);
+    } 
+
+    .projects {
+        transition: all 500ms;
+    }
+    
+    .findme-imgs img {
+        transition: all 400ms;
+    }
+}
+
+/* Animations will apply only for devices that don't have a hover system AKA
+mobile devices */
+@media (hover: none) {
+    .direita a {
+        transition: all 150ms ease-in-out;
+    }
+    .direita a:active  {
+        box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+        background-color: #272525;
+        color: aliceblue;
+    }
+
+    .projects {
+        transition: all 400ms;
+    }
+    
+    .findme-imgs img {
+        transition: all 350ms;
+    }
+}
+
+@keyframes blockEntrance {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes findme-imgsEntrance {
+    from {
+        opacity: 0;
+        transform: scale(0.3 , 0.7);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Plays both blockEntrance and findme-imgsEntrance animations when
+opening/reloading page, if reduced motion = no-preference */
+@media (prefers-reduced-motion: no-preference) {  
+    header {
+        animation: blockEntrance 500ms ease-in-out;
+        animation-fill-mode: backwards;
+        animation-delay: calc(1 * var(--stagger-delay));
+    }
+
+    #name-photo {
+        animation: blockEntrance 500ms ease-in-out;
+        animation-fill-mode: backwards;
+        animation-delay: calc(2 * var(--stagger-delay));
+    }
+
+    #name-photo p:first-child {
+        animation: blockEntrance 500ms ease-in-out;
+        animation-fill-mode: backwards;
+        animation-delay: calc(3 * var(--stagger-delay));
+    }
+
+    .myphoto {
+        transition: all 400ms;
+        animation: blockEntrance 500ms ease-in-out;
+        animation-fill-mode: backwards;
+        animation-delay: calc(4 * var(--stagger-delay));
+    }
+
+    #name-photo p:last-child {
+        animation: blockEntrance 500ms ease-in-out;
+        animation-fill-mode: backwards;
+        animation-delay: calc(5 * var(--stagger-delay));
+    }
+
+    #findme-info {
+        animation: blockEntrance 500ms ease-in-out;
+        animation-fill-mode: backwards;
+        animation-delay: calc(6 * var(--stagger-delay));
+    }
+
+    .findme-imgs img {
+        animation: findme-imgsEntrance 500ms ease-in-out;
+        animation-fill-mode: backwards;
+        animation-delay: calc(7 * var(--stagger-delay));
+    }
+
+    #projects-wrapper {
+        animation: blockEntrance 500ms ease-in-out;
+        animation-fill-mode: backwards;
+        animation-delay: calc(8 * var(--stagger-delay));
+    }
+
+    .footer {
+        animation: blockEntrance 500ms ease-in-out;
+        animation-fill-mode: backwards;
+        animation-delay: calc(9 * var(--stagger-delay));
+    }
+}

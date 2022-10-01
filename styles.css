@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    margin-top: 60px;
+    min-width: auto;
+    font-family: "Noto Sans", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.header-wrapper {
+    background-color: #f8f8f8;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin: auto;
+    z-index: 1;       
+}
+
+header {
+    background-color: #f8f8f8;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+
+header a {
+    text-decoration: none;
+    color: #5b5252;
+    width: 100%;
+    padding: 13px;
+    text-align: center;
+    align-content: center;
+    line-height: 35px;
+    font-family: monospace !important;   
+}
+
+.direita {
+    display: flex;
+    font-size: 17px;
+}
+
+.direita a {
+    flex: 1;
+}
+
+.esquerda {
+    display: flex;
+    font-size: 30px;
+}
+
+#name-photo {
+    background-color: #1abc9c ;
+    text-align: center;
+    color: #dfe1e1;
+    width: 100%;
+    scroll-margin-top: 60px;
+}
+
+#name-photo p:first-child {
+    font-size: 27px;
+}
+
+#name-photo p {
+    padding: 15px 10px;
+    font-size: 20px;
+}
+
+#name-photo p:first-child {
+    padding-bottom: 25px;
+}
+
+#name-photo p:last-child {
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.myphoto {
+    z-index: 100;
+    height: 250px;
+    border-radius: 50%; 
+    /* Box shadow fixes a weird bug in Opera. Square border appears for brief moment when
+    blockEntrance animation is playing. */ 
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+}
+
+#findme-info {
+    padding: 20px 0;
+    background-color: #474e5d;
+    text-align: center;
+    color: #dfe1e1;
+    font-size: 20px;
+    scroll-margin-top: 60px;
+}
+
+#findme-info p:first-child {
+    padding: 10px 10px 20px;
+    font-size: 27px;
+}
+
+#findme-info p:nth-child(2) {
+    padding: 10px;
+}
+
+.findme-imgs {
+    display: flex;
+    margin: 5px auto;
+    padding: 10px 0 20px;
+    justify-content: space-around;
+    width: 14%;
+    min-width: 260px;
+}
+
+.findme-imgs img {
+    cursor: pointer;
+    height: 100px;
+    border-radius: 100%;
+}
+
+#projects-wrapper {
+    scroll-margin-top: 60px;
+    color: #5b5252;
+    font-size: 27px;
+    padding: 45px 10px;
+    text-align: center;
+}
+
+.projects-header {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px 20px;
+    flex: 1;
+    width: 96%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#projects-images {
+    max-height: 200px;
+    min-height: 185px;
+    height: 14vw;    
+    text-align: center;
+}
+
+.projects {
+    cursor: pointer;
+    border: 1px outset;
+    display: flex;
+    flex: 1;
+    font-size: 19px;
+    background-color: #e0e2e6;
+}
+
+.project-text {
+    padding: 10px 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 350px; 
+    
+}
+
+.project-text p:first-child {
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    background-color: #474e5d;
+    height: 50px;
+    text-align: center;
+    padding: 35px 10px 10px 10px;
+    color: #dfe1e1;
+}
+/* For mobile Devices */
+@media screen and (max-width: 670px)  {
+    #name-photo {
+        scroll-margin-top: 79px;
+    }
+
+    #findme-info {
+        scroll-margin-top: 79px;
+    }
+    
+    #projects-wrapper {
+        scroll-margin-top: 79px;
+    }   
+
+    body {
+        margin-top: 79px;
+    }
+
+    header {
+        height: auto;
+        width: 100%;
+    }
+
+    .esquerda a {
+        max-width: 120px;
+        font-size: 22px;
+        line-height: 26px;
+        padding-left: 7px;
+        padding-right: 5px;
+    }
+
+    .direita {
+        padding-right: 10px;
+    }
+
+    .direita a {
+        padding: 22px 7px;
+        font-size: 16px;
+    }
+
+    .project-text p:first-child {
+        font-size: 23px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .project-text {
+        font-size: 17px;
+        min-width: 188px;
+    }
+
+    #projects-images {
+        display: none;
+    }
+}
+
+

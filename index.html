@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="animations.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header-wrapper">
+        <header>
+            <div class="esquerda">
+                <a href="">Gustavo Justo</a>
+            </div>
+            <div class="direita">
+                <a href="#name-photo">Sobre</a>
+                <a href="#findme-info">Contato</a>
+                <a href="#projects-wrapper">Projetos</a>
+            </div>
+        </header>
+    </div>
+    <div class="main">
+        <div id="name-photo">
+            <p>Quem sou eu?</p>
+            <img class="myphoto" src="assets/photo.jpg">
+            <p>Eu sou Gustavo Justo, estudante de Análise e Desenvolvimento de Sistemas.</p>
+        </div>
+        <div id="findme-info">
+            <p>Como me encontrar?</p>
+            <p>Siga os links abaixo para encontrar minhas redes sociais e
+            repositórios de projetos.</p>
+            <div class="findme-imgs">
+                <img src="assets/github-round.png" onclick="window.location='https://github.com/GustavoJST';">
+                <img src="assets/linkedin-round.png" onclick="window.location='https://www.linkedin.com/in/gustavojst/';">
+            </div>
+        </div>
+        <div id="projects-wrapper">
+            <p class="projects-header">Quais são meus principais projetos?</p>
+            <div class="projects-container">
+                <div class="projects">
+                    <img id=projects-images src="assets/github.png" alt="">
+                    <div class="project-text">
+                        <p>CLID - CLI Drive (WIP)</p>
+                        <p> &nbsp; Cliente que utiliza o terminal para realizar ações no
+                        Google Drive, como upload/download de arquivos, utilizando chamadas de API.</p>
+                    </div>
+                </div>
+                <div class="projects" onclick="window.location='https://github.com/GustavoJST/Calculator';">
+                    <img id="projects-images" src="assets/github.png" alt="">
+                    <div class="project-text">
+                        <p>Java Calculator</p>
+                        <p>Recriação da calculadora do Windows, utilizando Java
+                        e Java Swing GUI.</p>
+                    </div>
+                </div>
+                <div class="projects" onclick="window.location='https://github.com/GustavoJST/IDW-Tabela';">
+                    <img id="projects-images" src="assets/github.png" alt="">
+                    <div class="project-text">
+                        <p>Tabela da Liga dos Campeões UEFA</p>
+                        <p>Recriação do layout da Tabela da Liga dos Campeões da UEFA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
