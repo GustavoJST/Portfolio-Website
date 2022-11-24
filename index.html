@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
     <title>Gustavo Justo</title>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <script defer src="app.js"></script>
 </head>
+
 <body>
     <div class="header-wrapper">
         <header>
@@ -41,7 +44,7 @@
         <div id="projects-wrapper">
             <p class="projects-header">Quais são meus principais projetos?</p>
             <div class="projects-container">
-                <div class="projects" onclick="window.location='https://github.com/GustavoJST/CLID';">
+                <div class="projects" id="project1">
                     <img id=projects-images src="assets/github.png" alt="">
                     <div class="project-text">
                         <p>CLID</p>
@@ -49,19 +52,21 @@
                             upload/download de arquivos do Google Drive, através de chamadas API.</p>
                     </div>
                 </div>
-                <div class="projects" onclick="window.location='https://github.com/GustavoJST/Calculator';">
+                <div class="projects" id="project2">
+                    <img id="projects-images" src="assets/github.png" alt="">
+                    <div class="project-text">
+                        <p>Finance Website</p>
+                        <p>Site que permite simular a compra e venda de ações
+                            usando a API da IEX Cloud, Flask, SQL e Jinja.
+                        </p>
+                    </div>
+                </div>
+                <div class="projects" id="project3"">
                     <img id="projects-images" src="assets/github.png" alt="">
                     <div class="project-text">
                         <p>Java Calculator</p>
                         <p>Recriação da calculadora do Windows, utilizando Java
                         e Java Swing GUI.</p>
-                    </div>
-                </div>
-                <div class="projects" onclick="window.location='https://github.com/GustavoJST/IDW-Tabela';">
-                    <img id="projects-images" src="assets/github.png" alt="">
-                    <div class="project-text">
-                        <p>Tabela da Liga dos Campeões UEFA</p>
-                        <p>Recriação do layout da Tabela da Liga dos Campeões da UEFA</p>
                     </div>
                 </div>
             </div>
